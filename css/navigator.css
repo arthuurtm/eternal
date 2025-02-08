@@ -1,0 +1,84 @@
+.navigator {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 240px;
+    height: 100%;
+    /* opacity: 1; */
+    background-color: var(--menu);
+    z-index: 4;
+    transition: transform 0.5s ease, opacity 0.5s ease, scale 0.3s ease; /* Adiciona transição suave */
+    border-left: 1px solid var(--border);
+    transform: translateX(0);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.navigator.hidden {
+    right: 0;
+    transform: translateX(100%);
+}
+
+.navigator.hide {
+    opacity: 0;
+}
+
+.hide-navigator {
+    position: absolute;
+    top: 10px;
+    left: -40px; /* Posiciona o botão fora do navigator */
+    font-size: 25px;
+    cursor: pointer;
+    color: var(--text);
+    z-index: 4;
+}
+
+.navigator.active .center ul li a p {
+    display: unset;
+}
+
+.navigator.minimized .center {
+    margin-top: 0;
+}
+
+.navigator-options {
+    display: flex;
+    align-items: center;
+}
+
+.navigator-options ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navigator-options li {
+    padding-left: 15px;
+    display: flex;
+    list-style: none;
+}
+
+.navigator-options {
+    padding: 20px;
+}
+
+.navigator-options ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navigator-options li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.navigator-options li p {
+    margin-left: 10px;
+    color: var(--text);
+}
+
+.navigator-options li:hover {
+    color: var(--mh-options-hover);
+    transform: scale(1.1);
+}

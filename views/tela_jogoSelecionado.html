@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Display</title>
+    <link rel="stylesheet" href="../css/tela_jogoSelecionado.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="content"> -->
+            <!-- 🔹 Imagem do Produto -->
+            <div class="product-image">
+                <img src="../img/product.png" alt="Imagem do Jogo" class="game-image">
+            </div>
+
+            <div class="product-details">
+                <h1>Nome do Jogo - Edição Especial</h1>
+                <a href="#" class="store-link">Vendido por ETERNAL</a>
+
+                <div class="rating block">
+                    <div class="stars">
+                        <span class="star" data-value="1">★</span>
+                        <span class="star" data-value="2">★</span>
+                        <span class="star" data-value="3">★</span>
+                        <span class="star" data-value="4">★</span>
+                        <span class="star" data-value="5">★</span>
+                    </div>
+                    <a href="#" class="review-count">1 avaliação</a>
+                </div>
+
+                <!-- <hr> -->
+
+                <p class="price">R$ 199,90</p>
+
+                <div class="options">
+                    <p>Plataforma:</p>
+                    <div class="option-buttons">
+                        <button class="option avaliable">PC</button>
+                        <button class="option">PlayStation</button>
+                        <button class="option">Xbox</button>
+                    </div>
+                </div>
+
+                <!-- <hr> -->
+
+                <div class="product-buy-action">
+                    <button class="btn buy">Comprar agora</button>
+                </div>
+
+                <div class="info-icons">
+                    <p class="game-description">Descrição detalhada do jogo, incluindo detalhes sobre jogabilidade, história e gráficos.</p>
+                    <p>📦 Enviado pela Loja</p>
+                </div>
+            </div>
+        <!-- </div> -->
+    </div>
+
+    <!-- 🔹 Avaliações -->
+    <div class="reviews">
+        <h2>Avaliações</h2>
+        <div id="review-list">
+            <div class="review"><strong>Lucimar Agostinho:</strong> Bom dia Brasil, hoje é dia 11/02/2024. Eles são todos Saymonistas! Estão vendendo um jogo falso... só crime grave. ⭐</div>
+        </div>
+    </div>
+
+    <!-- 🔹 Formulário de Avaliação -->
+    <div class="review-form">
+        <h3>Deixe sua avaliação</h3>
+        <textarea id="review-text" placeholder="Escreva sua opinião..."></textarea>
+        <label>Nota:</label>
+        <select class="input" id="select">
+            <option value="5">★★★★★</option>
+            <option value="4">★★★★☆</option>
+            <option value="3">★★★☆☆</option>
+            <option value="2">★★☆☆☆</option>
+            <option value="1">★☆☆☆☆</option>
+        </select>
+        <button class="btn submit-review">Avaliar</button>
+    </div>
+    <script src="../js/stars.js"></script>
+    <script>
+      setupStars('.rating', 1);
+    </script> 
+</body>
+</html>

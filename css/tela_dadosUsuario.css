@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    background-color: transparent !important;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Caixa do popup */
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+/* Botão de fechar */
+.close {
+    cursor: pointer;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close:hover {
+    color: darkred;
+}

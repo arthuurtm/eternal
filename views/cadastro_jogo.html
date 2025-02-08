@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/loginForm.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<div class="page">
+    <div id="error-message" class="error-message" style="display: none;">
+        × <span id="error-text"></span>
+    </div>
+    <div class="form">
+        <div class="left">
+            <img src="../img/dark-logo.png" alt="Logo" id="logo" />
+            <h1>Cadastrar jogo para venda</h1>
+        </div>
+        <div class="right">
+            <form class="formContainer" id="form">
+                <div class="centered">
+                    <div class="formStep" id="step1">
+                        <div class="sepElements">
+                            <label for="gameName">Nome do Jogo</label>
+                            <input id="gameName" class="input" type="text" placeholder="Um nome bem criativo!" />
+                            <label for="gameDescription">Descrição</label>
+                            <input id="gameDescription" class="input" type="text" placeholder="A descrição o jogo" required />
+                        </div>
+                    </div>
+        
+                    <div class="formStep" id="step2">
+                        <div class="sepElements">
+                            <label for="developer">Desenvolvedora</label>
+                            <div class="joinElements-row">
+                                <input id="developer" class="input select" type="" required />
+                                <div 
+                                    class="btn symbolic material-symbols-outlined"
+                                    onclick="changeSitePage('views/cadastro_desenvolvedora.html', 'Comprar Jogo', true, true)"
+                                >arrow_outward</div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="formStep" id="step3">
+                        <div class="sepElements">
+                            <label for="genero">Gênero de jogo</label>
+                            <div class="joinElements-row">
+                                <input id="genero" class="input select" type="" required />
+                                <div 
+                                    class="btn symbolic material-symbols-outlined"
+                                    onclick="changeSitePage('views/cadastro_genero.html', 'Comprar Jogo', true, true)"
+                                >arrow_outward</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="formStep" id="step4">
+                        <div class="sepElements">
+                            <label for="price">Preço</label>
+                            <input id="price" class="input" type="email" placeholder="Preço de venda do jogo" required />
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="sepButtons">
+                    <button class="btn destructive" id="prevButton" type="button" style="display: none;">Voltar</button>
+                    <button class="btn" id="nextButton" type="button">Próximo</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="../js/formModel.js"></script>
+</body>
+</html>

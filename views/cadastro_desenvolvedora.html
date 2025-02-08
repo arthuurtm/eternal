@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Desenvolvedora</title>
+    <link rel="stylesheet" href="../css/loginForm.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="page">
+        <div class="form">
+            <div class="left">
+                <img src="../img/dark-logo.png" alt="Logo" id="logo" />
+                <h1>Cadastrar Desenvolvedora</h1>
+            </div>
+            <div class="right">
+                <form class="formContainer" id="form">
+                    <div class="centered">
+                        <div class="formStep" id="step1">
+                            <div class="sepElements">
+                                <label for="developer">Nome da Desenvolvedora</label>
+                                <input id="developer" class="input" type="text" placeholder="Digite o nome da desenvolvedora" required />
+                                <label for="cnpj">CNPJ</label>
+                                <input id="cnpj" class="input" type="text" placeholder="Se houver, digite o CNPJ" required />
+                            </div>
+                        </div>
+
+                        <div class="formStep" id="step2">
+                            <div class="sepElements">
+                                <label for="phone">Telefone</label>
+                                <input id="phone" class="input" type="tel" placeholder="Telefone de contato" required />
+                                <label for="email">E-mail</label>
+                                <input id="email" class="input" type="email" placeholder="E-mail de contato" required />
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="sepButtons">
+                        <button class="btn destructive" id="prevButton" type="button" style="display: none;">Voltar</button>
+                        <button class="btn" id="nextButton" type="button">Próximo</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../js/formModel.js"></script>
+    <script src="../js/stars.js"></script>  
+</body>
+</html>

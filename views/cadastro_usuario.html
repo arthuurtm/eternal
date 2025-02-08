@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/loginForm.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<div class="page">
+    <div id="error-message" class="error-message" style="display: none;">
+        × <span id="error-text"></span>
+    </div>
+    <div class="form">
+        <div class="left">
+            <img src="../img/dark-logo.png" alt="Logo" id="logo" />
+            <h1>Criar uma conta</h1>
+        </div>
+        <div class="right">
+
+            <form class="formContainer" id="form">
+                <div class="centered">
+                    <div class="formStep" id="step1">
+                        <div class="sepElements">
+                            <label for="name">Nome Completo</label>
+                            <input id="name" class="input" type="text" placeholder="Seu nome completo" />
+                            <label for="username">Nome de Usuário</label>
+                            <input id="username" class="input" type="text" placeholder="Seu nome de usuário" required />
+                        </div>
+                    </div>
+                    
+                    <div class="formStep" id="step2">
+                        <div class="sepElements">
+                            <label for="cpf">CPF</label>
+                            <input id="cpf" class="input" type="text" placeholder="Seu Cadastro de Pessoa Física (CPF)" required />
+                            <label for="birthdate">Data de Nascimento</label>
+                            <input id="birthdate" class="input date" type="date" placeholder="Sua data de nascimento" required />
+                        </div>
+                    </div>
+        
+                    <div class="formStep" id="step3">
+                        <div class="sepElements">
+                            <label for="cep">CEP</label>
+                            <input id="cep" class="input" type="text" placeholder="CEP do seu endereço" required />
+                            <label for="address">Endereço</label>
+                            <input id="address" class="input" type="text" placeholder="Seu endereço" required />
+                        </div>
+                    </div>
+
+                    <div class="formStep" id="step4">
+                        <div class="sepElements">
+                            <label for="email">E-mail</label>
+                            <input id="email" class="input" type="email" placeholder="Seu e-mail" required />
+                            <label for="tel">Telefone</label>
+                            <input id="tel" class="input" type="tel" placeholder="Seu endereço" required />
+                        </div>
+                    </div>
+        
+                    <div class="formStep" id="step5">
+                        <div class="sepElements">
+                            <label for="psswd1">Senha</label>
+                            <input id="psswd1" class="input" type="password" placeholder="Uma senha BEM segura" required />
+                            <label for="psswd2">Confirme a senha</label>
+                            <input id="psswd2" class="input" type="password" placeholder="Confirme sua senha" required />
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="sepButtons">
+                    <button class="btn destructive" id="prevButton" type="button" style="display: none;">Voltar</button>
+                    <button class="btn" id="nextButton" type="button">Próximo</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="../js/formModel.js"></script>
+</body>
+</html>

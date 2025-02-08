@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Genero</title>
+    <link rel="stylesheet" href="../css/loginForm.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="page">
+        <div class="form">
+            <div class="left">
+                <img src="../img/dark-logo.png" alt="Logo" id="logo" />
+                <h1>Cadastrar Gênero de Jogo</h1>
+            </div>
+            <div class="right">
+                <form class="formContainer" id="form">
+                    <div class="centered">
+                        <div class="formStep" id="step1">
+                            <div class="sepElements">
+                                <label for="genero">Nome</label>
+                                <input id="genero" class="input" type="text" placeholder="Digite o nome do genero de jogo" required />
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="sepButtons">
+                        <button class="btn destructive" id="prevButton" type="button" style="display: none;">Voltar</button>
+                        <button class="btn" id="nextButton" type="button">Próximo</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../js/formModel.js"></script>
+    <script src="../js/stars.js"></script>  
+</body>
+</html>

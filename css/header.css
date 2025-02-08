@@ -1,0 +1,84 @@
+#logo {
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 120px;
+}
+
+.menu {
+    background-color: var(--menu);
+    color: var(--text2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu .logo {
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.menu .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.menu .center.hidden {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    transform: translateY(-100%);
+}
+
+.menu .center .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 0 20px;
+    width: 40%;
+}
+
+.menu .center .search-bar .material-icons {
+    font-size: 20px;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+.menu .center .search-bar input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    color: black;
+    width: 90%;
+}
+
+.menu .user-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu .user-actions div {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: black;
+    font-size: 24px;
+}
+
+.menu .user-actions div:hover {
+    color: #aaa;
+}
