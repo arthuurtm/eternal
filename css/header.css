@@ -29,9 +29,8 @@
     transition: transform 0.3s ease;
 }
 
-.menu .center.hidden {
+.menu .center.minimized {
     position: absolute;
-    margin: 0;
     top: 0;
     transform: translateY(-100%);
 }

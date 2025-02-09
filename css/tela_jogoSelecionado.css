@@ -194,3 +194,9 @@ select {
 .submit-review:hover {
     background-color: #e5941a;
 }
+
+@media(max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}

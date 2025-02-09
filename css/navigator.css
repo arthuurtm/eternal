@@ -14,7 +14,7 @@
     border-bottom-left-radius: 15px;
 }
 
-.navigator.hidden {
+.navigator.minimized {
     right: 0;
     transform: translateX(100%);
 }

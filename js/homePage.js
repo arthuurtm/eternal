@@ -3,13 +3,18 @@ const navigator = document.getElementById('navigator');
 const hideNavigator = document.getElementById('hideNavigator');
 const header = document.getElementById('menu-header');
 const overlay = document.getElementById('site_overlay');
+const loading = document.getElementById('site_loading');
 
 function changeSitePage(src, title, focus = null, hide = null) {
+
+    loading.classList.remove('hidden');
+    loading.classList.add('active');
+
     if (!!focus) {
-        header.classList.add('hidden');
-        navigator.classList.toggle('hidden');
+        header.classList.add('minimized');
+        navigator.classList.add('minimized');
     } else {
-        header.classList.remove('hidden');
+        header.classList.remove('minimized');
     }
 
     if (!!hide) {
@@ -23,6 +28,8 @@ function changeSitePage(src, title, focus = null, hide = null) {
     iframe.title = title;
 
     iframe.onload = function () {
+        loading.classList.add('hidden');
+        loading.classList.remove('active');
         var script = document.createElement('script');
         script.type = 'text/javascript';
         script.text = `
@@ -85,7 +92,7 @@ window.addEventListener('message', function (event) {
 });
 
 hideNavigator.addEventListener('click', () => {
-    navigator.classList.toggle('hidden');
+    navigator.classList.toggle('minimized');
 });
 
 changeSitePage('views/tela_jogos.html', 'Início');

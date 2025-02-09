@@ -25,13 +25,13 @@
         </div>
     </header>
 
-    <div class="navigator hidden" id="navigator">
+    <div class="navigator minimized" id="navigator">
         <div class="hide-navigator" id="hideNavigator">☰</div>
         <div class="center">
             <nav class="navigator-options">
                 <div class="user-actions">
                     <ul>
-                        <li onclick="changeSiteModal('/views/tela_dadosUsuario.html')">
+                        <li onclick="changeSiteModal('views/tela_dadosUsuario.html')">
                             <div class="material-symbols-outlined">account_circle</div>
                             <p>Conta</p>
                         </li>
@@ -53,8 +53,14 @@
         <iframe id="site_page"></iframe>
     </div>
 
-    <div class="site_overlay hidden" id="site_overlay">
+    <div class="site_overlay focus-screen hidden" id="site_overlay">
         <iframe id="site_modal"></iframe>
+    </div>
+
+    <div class="site_loading hidden" id="site_loading">
+        <div class="loader-back">
+            <div class="loader"></div>
+        </div>
     </div>
 
     <script src="js/homePage.js"></script>
