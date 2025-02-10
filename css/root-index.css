@@ -37,7 +37,7 @@ body {
 
 .site_start {
     position: fixed;
-    top: 60px; /* Altura do header */
+    top: 50px; /* Altura do header */
     left: 0;
     right: 0;
     bottom: 0;

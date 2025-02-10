@@ -25,7 +25,7 @@
 
 .hide-navigator {
     position: absolute;
-    top: 10px;
+    top: 5px;
     left: -40px; /* Posiciona o botão fora do navigator */
     font-size: 25px;
     cursor: pointer;
