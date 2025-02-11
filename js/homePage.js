@@ -51,6 +51,13 @@ function changeSitePage(src, title, focus = null, hide = null) {
                     path: path
                 },'*');
             }
+
+            function changeSiteModal(src) {
+                window.parent.postMessage({ 
+                    action: 'changeSiteModal',
+                    src: src,
+                },'*');
+            }
         `;
         iframe.contentDocument.body.appendChild(script);
     };
