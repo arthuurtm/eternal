@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Twitter</title>
+    <link rel="stylesheet" href="../css/tela_usuario.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="container">
+
+        <main class="main-content">
+            <header class="profile-header">
+                <div class="profile-info">
+                    <img src="../img/profile.png" alt="Foto de perfil" class="profile-photo">
+                    <div class="user-details">
+                        <h1>Olá, Lucimar Agostinho!</h1>
+                    </div>
+                </div>
+            </header>
+
+            <div class="posts">
+                <div class="post">
+                    <h3>Jogos publicados por você</h4>
+                </div>
+                <div>
+                    <div 
+                    class="gameCard"
+                    onclick="changeSitePage('views/tela_editarInfo.html', 'Comprar Jogo')"
+                >
+                    <div class="title">
+                        <p>Let's go Pikachu! (Indisponível)</p>
+                    </div>
+
+                    <div class="banner">
+                        <img id="banner" src="../img/product2.jpeg" alt="Banner do jogo" />
+                    </div>
+                </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
