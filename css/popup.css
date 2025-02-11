@@ -53,14 +53,10 @@ body {
     border-radius: 15px;
 }
 
-.tOptions .closeTab:hover {
-    /* color: var(--primary); */
-}
-
 .content {
     grid-row: 2;
     display: grid;
-    grid-template-columns: 0.5fr 2fr;
+    grid-template-columns: 1fr;
 }
 
 .nav {
