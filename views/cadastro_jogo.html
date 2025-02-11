@@ -28,12 +28,23 @@
                             <input id="gameDescription" class="input" type="text" placeholder="A descrição o jogo" required />
                         </div>
                     </div>
-        
+
                     <div class="formStep" id="step2">
+                        <div class="sepElements">
+                            <label for="price">Imagem principal do jogo</label>
+                            <input id="price" class="" type="file" placeholder="" required />
+                            <label for="price">Banner do jogo</label>
+                            <input id="price" class="" type="file" placeholder="" required />
+                        </div>
+                    </div>
+        
+                    <div class="formStep" id="step3">
                         <div class="sepElements">
                             <label for="developer">Desenvolvedora</label>
                             <div class="joinElements-row">
-                                <input id="developer" class="input select" type="" required />
+                                <select id="developer" class="input select" required>
+                                    <option>Opção 1</option>
+                                </select>
                                 <div 
                                     class="btn symbolic material-symbols-outlined"
                                     onclick="changeSitePage('views/cadastro_desenvolvedora.html', 'Comprar Jogo', true, true)"
@@ -42,11 +53,13 @@
                         </div>
                     </div>
         
-                    <div class="formStep" id="step3">
+                    <div class="formStep" id="step4">
                         <div class="sepElements">
                             <label for="genero">Gênero de jogo</label>
                             <div class="joinElements-row">
-                                <input id="genero" class="input select" type="" required />
+                                <select id="genero" class="input select" required>
+                                    <option>Opção 1</option>
+                                </select>
                                 <div 
                                     class="btn symbolic material-symbols-outlined"
                                     onclick="changeSitePage('views/cadastro_genero.html', 'Comprar Jogo', true, true)"
@@ -55,7 +68,7 @@
                         </div>
                     </div>
 
-                    <div class="formStep" id="step4">
+                    <div class="formStep" id="step5">
                         <div class="sepElements">
                             <label for="price">Preço</label>
                             <input id="price" class="input" type="email" placeholder="Preço de venda do jogo" required />
