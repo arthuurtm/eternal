@@ -30,16 +30,25 @@
         <div class="center">
             <nav class="navigator-options">
                 <div class="user-actions">
-                    <ul>
-                        <li onclick="changeSiteModal('views/tela_dadosUsuario.html')">
+                    <ul id="user-actions-ul">
+                        <li 
+                            onclick="changeSitePage('views/tela_usuario.html')" 
+                            id="reqLog"
+                        >
                             <div class="material-symbols-outlined">account_circle</div>
                             <p>Conta</p>
                         </li>
-                        <li>
+                        <!-- <li 
+                            onclick="changeSiteModal('views/tela_carrinho.html')" 
+                            id="reqLog"
+                        >
                             <div class="material-symbols-outlined">shopping_cart</div>
                             <p>Carrinho</p>
-                        </li>
-                        <li onclick="changeSitePage('views/cadastro_jogo.html', 'Cadastrar Jogo', true, true)">
+                        </li> -->
+                        <li 
+                            onclick="changeSitePage('views/cadastro_jogo.html', 'Cadastrar Jogo', true, true)"
+                            id="reqLog"
+                        >
                             <div class="material-symbols-outlined">publish</div>
                             <p>Publicar jogo</p>
                         </li>

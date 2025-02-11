@@ -21,9 +21,11 @@
                         <div class="sepElements">
                             <label for="personalName">E-mail</label>
                             <input class="input" type="text" id="personalEmail" placeholder="Digite seu e-mail" />
-                    
                             <label for="lastName">Senha</label>
-                            <input class="input" type="password" id="password" placeholder="Digite sua senha" />
+                            <div class="joinElements">
+                                <input class="input" type="password" id="password" placeholder="Digite sua senha" />
+                                <a class="forgot" onclick="changeSitePage('views/redefinir_senha.html', 'Redefinir Senha', true, true)">Esqueci a senha</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -35,5 +37,8 @@
     </div>
   </div>
   <script src="../js/formModel.js"></script>
+  <script>
+    
+  </script>
 </body>
 </html>

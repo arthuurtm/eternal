@@ -12,11 +12,11 @@
         <!-- <div class="content"> -->
             <!-- 🔹 Imagem do Produto -->
             <div class="product-image">
-                <img src="../img/product.png" alt="Imagem do Jogo" class="game-image">
+                <img src="../img/product.jpeg" alt="Imagem do Jogo" class="game-image">
             </div>
 
             <div class="product-details">
-                <h1>Nome do Jogo - Edição Especial</h1>
+                <h1>Super Mario Bros</h1>
                 <a href="#" class="store-link">Vendido por ETERNAL</a>
 
                 <div class="rating block">
@@ -37,9 +37,10 @@
                 <div class="options">
                     <p>Plataforma:</p>
                     <div class="option-buttons">
-                        <button class="option avaliable">PC</button>
-                        <button class="option">PlayStation</button>
-                        <button class="option">Xbox</button>
+                        <button class="option unavaliable">PC</button>
+                        <button class="option unavaliable">PlayStation</button>
+                        <button class="option unavaliable">Xbox</button>
+                        <button class="option avaliable">Nintendo</button>
                     </div>
                 </div>
 
@@ -56,15 +57,26 @@
         <!-- </div> -->
     </div>
 
-    <!-- 🔹 Avaliações -->
     <div class="reviews">
         <h2>Avaliações</h2>
         <div id="review-list">
-            <div class="review">
-                <strong>⭐</strong>
-                <div style="margin-top: 10px;">
-                    <strong>Lucimar Agostinho:</strong> 
-                    Bom dia Brasil, hoje é dia 11/02/2024. Eles são todos Saymonistas! Estão vendendo um jogo falso... só crime grave.
+            <div class="review" style="gap: 20px">
+                <div 
+                    class="review-photo" 
+                    onclick="changeSitePage('views/tela_usuario.html')"
+                >
+                    <img src="../img/profile.png" alt="Foto de perfil" style="cursor: pointer;">
+                </div>
+                <div>
+                    ★★★★★
+                    <div>
+                        <strong>Lucimar Agostinho: Excelente</strong>
+                        <div style="margin-top: 10px;">
+                        Bom dia Brasil. Bom dia mundo, hoje é dia 11/02/2024. A minha equipe amada comprou este jogo eletrônico, 
+                        agora, não consigo parar de jogar. Os pregos que me atrapalham serão todos castigados.
+                        A verdade revelada contra o Saymom todos os dias de sua vida. A verdade, ministério etrom!
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

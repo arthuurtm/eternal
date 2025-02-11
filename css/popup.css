@@ -1,0 +1,131 @@
+body {
+    display: flex;
+    background-color: transparent !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.tableSettings {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto;
+    border-radius: 12px;
+    z-index: 6;
+    background-color: var(--bg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* border: 1px solid var(--border); */
+    color: var(--text);
+    width: auto;
+    max-width: 90%;
+    height: auto;
+    animation: moveToCenter 0.6s ease forwards;
+}
+
+.titleBar {
+    display: grid;
+    grid-row: 1;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    padding: 15px;
+}
+
+.tOptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tOptions p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text);
+}
+
+.tOptions .closeTab {
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text);
+    cursor: pointer;
+    background-color: var(--bg2);
+    border-radius: 15px;
+}
+
+.tOptions .closeTab:hover {
+    /* color: var(--primary); */
+}
+
+.content {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+}
+
+.nav {
+    grid-column: 1;
+    padding: 15px 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.nav a p {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    color: var(--mh-options-hover);
+}
+
+.nav a span {
+    margin-top: 3px;
+    font-size: 24px;
+}
+
+.navPage {
+    grid-column: 2;
+    height: auto;
+    padding: 15px;
+    color: var(--text);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    /* border-left: 1px solid var(--border); */
+}
+
+form, .pageContainer, .pageContainer .ul {
+    width: 100%;
+    height: auto;
+}
+
+.pageContainer {
+    display: none;
+}
+
+.pageContainer.active {
+    display: block;
+}
+
+/* Estilização de li */
+li {
+    display: block;
+    width: 100%;
+}
+
+li:last-child {
+    border-bottom: none; 
+}
